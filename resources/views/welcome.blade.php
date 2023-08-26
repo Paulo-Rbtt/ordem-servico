@@ -153,7 +153,7 @@
                             <p><strong>Prazo de Atendimento:</strong> {{ date('d/m/Y', strtotime($ordem->prazo_atendimento)) }}</p>
                             <p><strong>Técnico Responsável:</strong> {{ $ordem->tecnico_nome }}</p>
                             <p><strong>Endereço de Atendimento:</strong> {{ $ordem->endereco_atendimento }}</p>
-                            <p><strong>Observações do Atendimento:</strong> {{ $ordem->observacao_atendimento }}</p>
+                            <p><strong>Motivo do Atendimento:</strong> {{ $ordem->observacao_atendimento }}</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -204,7 +204,7 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="observacaoAtendimento" class="form-label">Observações do Atendimento</label>
+                            <label for="observacaoAtendimento" class="form-label">Motivo do Atendimento</label>
                             <input type="text" name="observacao_atendimento" class="form-control" id="observacaoAtendimento" required>
                         </div>
                         <button type="submit" class="btn btn-primary">Cadastrar</button>
