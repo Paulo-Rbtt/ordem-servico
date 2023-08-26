@@ -1,0 +1,23 @@
+* {
+    font-family: 'Roboto';
+}
+
+body {
+    min-height: 100vh;
+}
+
+.azul {
+    color: blue;
+}
+
+.verde {
+    color: green;
+}
+
+.amarelo {
+    color: #ffbf00;
+}
+
+.vermelho {
+    color: red;
+}
