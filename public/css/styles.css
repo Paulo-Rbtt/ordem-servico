@@ -6,6 +6,10 @@ body {
     min-height: 100vh;
 }
 
+.btn-delete {
+    color: red;
+}
+
 .azul {
     color: blue;
 }
@@ -15,9 +19,13 @@ body {
 }
 
 .amarelo {
-    color: #ffbf00;
+    color: #ffd900;
 }
 
 .vermelho {
-    color: red;
+    color: #FF0000;
+}
+
+.laranja {
+    color: #ff5500;
 }

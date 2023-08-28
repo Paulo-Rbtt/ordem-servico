@@ -25,7 +25,7 @@
             <tr>
                 <td>
                     <button class="btn" data-bs-toggle="modal" data-bs-target="#modalVisualizar{{ $ordem->id }}">
-                        <ion-icon name="eye" size="small"></ion-icon>
+                        <ion-icon name="eye" class="azul" size="small"></ion-icon>
                     </button>
                 </td>
                 <td>{{ $ordem->id }}</td>
@@ -48,7 +48,7 @@
                         $diasAtrasados = $tempo->days;
 
                         if ($diasAtrasados == 0) {
-                            echo '<span class="vermelho">' . ($diasAtrasados) . ' dias</span>';
+                            echo '<span class="laranja">' . ($diasAtrasados) . ' dias</span>';
                         } else {
                             echo '<span class="vermelho">' . ($diasAtrasados) . ' dias atrasado</span>';
                         }
@@ -63,7 +63,7 @@
                         } elseif ($diasRestantes == 2 || $diasRestantes == 1) {
                             $classe = 'amarelo';
                         } else {
-                            $classe = 'vermelho';
+                            $classe = 'laranja';
                         }
 
                         echo '<span class="' . $classe . '">' . ($diasRestantes + 1) . ' dias</span>';
@@ -86,7 +86,7 @@
                     <form action="{{ route('ordem_servico.destroy', ['id' => $ordem->id]) }}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn" onclick="return confirm('Tem certeza que deseja excluir esta ordem de serviço?')">
+                        <button type="submit" class="btn btn-delete" onclick="return confirm('Tem certeza que deseja excluir esta ordem de serviço?')">
                             <ion-icon name="close" size="small"></ion-icon>
                         </button>
                     </form>
