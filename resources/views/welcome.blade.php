@@ -129,6 +129,7 @@
                                 <div class="mb-3">
                                     <label for="novoStatus" class="form-label">Novo Status</label>
                                     <select class="form-control" name="novo_status" id="novoStatus" required>
+                                        <option value="Aberta">Aberta</option>
                                         <option value="Em andamento">Em andamento</option>
                                         <option value="Concluída">Concluída</option>
                                     </select>
@@ -200,7 +201,7 @@
                             <label for="status" class="form-label">Status</label>
                             <select class="form-control" name="status" id="status" required>
                                 <option value="Aberta">Aberta</option>
-                                <option value="Em andamento">Em andamento</option>
+                                <!-- <option value="Em andamento">Em andamento</option> -->
                             </select>
                         </div>
                         <div class="mb-3">
